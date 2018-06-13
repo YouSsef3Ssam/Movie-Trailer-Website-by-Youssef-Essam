@@ -12,6 +12,7 @@ class Video():
         - year(str):        Year of the video released
     """
     
+    # this is a constructor
     def __init__(self , title , duration , year):
         self.title = title
         self.duration = duration
@@ -34,11 +35,11 @@ class Movie(Video):
     def __init__(self , movie_name , movie_duration , movie_year 
                  , movie_story_line, movie_poster_url 
                  , movie_trialer_url):
-        
+        # This mean inheritance class Video
         Video.__init__(self, movie_name, movie_duration, movie_year)
         
         # this is instance variable
-        # self mean the instance i currently used for example if i use
+        # 'self' mean the instance i currently used for example if i use
         # instance named avatar will  be like that avatar.title = movie_name
         
         self.storyline = movie_story_line
